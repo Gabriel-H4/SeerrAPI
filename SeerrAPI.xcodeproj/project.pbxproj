@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B4E330A2F89A22500E7168E /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 5B4E33092F89A22500E7168E /* OpenAPIRuntime */; };
+		5B4E330D2F89A26100E7168E /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 5B4E330C2F89A26100E7168E /* OpenAPIURLSession */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5B4E32F92F89A15B00E7168E /* SeerrAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeerrAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4E330A2F89A22500E7168E /* OpenAPIRuntime in Frameworks */,
+				5B4E330D2F89A26100E7168E /* OpenAPIURLSession in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				5B4E32FB2F89A15B00E7168E /* SeerrAPI */,
+				5B4E33202F89A68200E7168E /* Frameworks */,
 				5B4E32FA2F89A15B00E7168E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +51,13 @@
 				5B4E32F92F89A15B00E7168E /* SeerrAPI.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5B4E33202F89A68200E7168E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,12 +85,17 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B4E33112F89A2BD00E7168E /* PBXTargetDependency */,
+				5B4E33132F89A2BD00E7168E /* PBXTargetDependency */,
+				5B4E330F2F89A2A000E7168E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5B4E32FB2F89A15B00E7168E /* SeerrAPI */,
 			);
 			name = SeerrAPI;
 			packageProductDependencies = (
+				5B4E33092F89A22500E7168E /* OpenAPIRuntime */,
+				5B4E330C2F89A26100E7168E /* OpenAPIURLSession */,
 			);
 			productName = SeerrAPI;
 			productReference = 5B4E32F92F89A15B00E7168E /* SeerrAPI.framework */;
@@ -105,6 +125,11 @@
 			);
 			mainGroup = 5B4E32EF2F89A15B00E7168E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5B4E33052F89A21100E7168E /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				5B4E33082F89A22500E7168E /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+				5B4E330B2F89A26100E7168E /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5B4E32FA2F89A15B00E7168E /* Products */;
 			projectDirPath = "";
@@ -134,6 +159,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B4E330F2F89A2A000E7168E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B4E330E2F89A2A000E7168E /* OpenAPIGenerator */;
+		};
+		5B4E33112F89A2BD00E7168E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B4E33102F89A2BD00E7168E /* OpenAPIRuntime */;
+		};
+		5B4E33132F89A2BD00E7168E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5B4E33122F89A2BD00E7168E /* OpenAPIURLSession */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5B4E33002F89A15B00E7168E /* Debug */ = {
@@ -263,6 +303,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MY7692F7R6;
@@ -273,7 +314,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -282,7 +323,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -297,9 +338,9 @@
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.4;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -308,6 +349,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MY7692F7R6;
@@ -318,7 +360,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -327,7 +369,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -342,9 +384,9 @@
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.4;
+				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -370,6 +412,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B4E33052F89A21100E7168E /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.11.1;
+			};
+		};
+		5B4E33082F89A22500E7168E /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.11.0;
+			};
+		};
+		5B4E330B2F89A26100E7168E /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B4E33092F89A22500E7168E /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4E33082F89A22500E7168E /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+		5B4E330C2F89A26100E7168E /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4E330B2F89A26100E7168E /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+		5B4E330E2F89A2A000E7168E /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4E33052F89A21100E7168E /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			productName = "plugin:OpenAPIGenerator";
+		};
+		5B4E33102F89A2BD00E7168E /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4E33082F89A22500E7168E /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+		5B4E33122F89A2BD00E7168E /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B4E330B2F89A26100E7168E /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B4E32F02F89A15B00E7168E /* Project object */;
 }

@@ -1,6 +1,6 @@
 # ``SeerrAPI``
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+Access the Seerr API using type-safe Swift code, generated from the OpenAPI.yaml
 
 ## Overview
 
