@@ -6,3 +6,7 @@ import Testing
     // Swift Testing Documentation
     // https://developer.apple.com/documentation/testing
 }
+
+@Test func getVersion() async throws {
+    
+}
