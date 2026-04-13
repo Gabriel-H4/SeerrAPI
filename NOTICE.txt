@@ -1,0 +1,126 @@
+
+                               Gabriel Hassebrock
+                     =====================================
+
+Please visit the SeerrAPI web site for more information:
+
+  * https://github.com/Gabriel-H4/SeerrAPI
+
+Copyright 2026 Gabriel Hassebrock
+
+Gabriel Hassebrock licenses this file to you under the MIT License
+(the "License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at:
+
+  https://spdx.org/licenses/MIT.html
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+
+Also, please refer to each LICENSE file, which is located in
+the main directory of each component, for the license terms of the
+components that this product depends on.
+
+-------------------------------------------------------------------------------
+
+This product contains scripts and derivations from Swift OpenAPI Generator
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-openapi-generator
+
+---
+
+This product contains scripts and derivations from Swift OpenAPI Runtime
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-openapi-runtime
+
+---
+
+This product contains scripts and derivations from Swift OpenAPI URLSession
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-openapi-urlsession
+
+-------------------------------------------------------------------------------
+
+This product contains scripts and derivations from OpenAPIKit
+
+  * LICENSE (MIT):
+    * https://spdx.org/licenses/MIT.html
+  * COPYRIGHT:
+    * Copyright 2020 Mathew Polzin
+  * HOMEPAGE:
+    * https://github.com/mattpolzin/OpenAPIKit
+
+---
+
+This product contains algorithm implementations from Swift Algorithms
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-algorithms
+
+---
+
+This product contains scripts and derivations from Swift Argument Parser
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-argument-parser
+
+---
+
+This product contains data types from Swift Collections
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-collections
+
+---
+
+This product contains data types from Swift HTTP Types
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-http-types
+
+Swift HTTP Types contains a derivation of various scripts from SwiftNIO.
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-nio
+    
+---
+    
+This product contains data types from Swift Numerics
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/apple/swift-numerics
+
+---
+
+This product contains a derivation of various scripts from Yams
+
+  * LICENSE (Apache License 2.0):
+    * https://www.apache.org/licenses/LICENSE-2.0
+  * HOMEPAGE:
+    * https://github.com/jpsim/Yams
+
+---
