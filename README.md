@@ -14,4 +14,5 @@ import SeerrAPI
 
 let client = SeerrAPI()
 let version = try? await client.getVersion()
+print(version ?? "Invalid Response")
 ```

@@ -21,13 +21,23 @@ public struct SeerrAPI {
     }
 
     /// Creates a new client for the SeerrAPI
-    public init() {
-        self.init(
-            underlyingClient: Client(
-                serverURL: try! Servers.Server2.url(),
-                transport: URLSessionTransport()
+    /// - Parameter baseURL: The URL of the Seerr server
+    public init(baseURL: String = "") {
+        if let serverURL = try? Servers.Server1.url(server: baseURL) {
+            self.init(
+                underlyingClient: Client(
+                    serverURL: serverURL,
+                    transport: URLSessionTransport()
+                )
             )
-        )
+        } else {
+            self.init(
+                underlyingClient: Client(
+                    serverURL: try! Servers.Server2.url(),
+                    transport: URLSessionTransport()
+                )
+            )
+        }
     }
 
     /// Fetches the version of the provided Seerr server.
@@ -36,16 +46,15 @@ public struct SeerrAPI {
     public func getVersion() async throws(SeerrAPI.APIError) -> String {
         if let response = try? await underlyingClient.getStatus() {
             switch response {
-                case .ok(let payload):
-                    guard let version = try? payload.body.json.version else {
-                        throw SeerrAPI.APIError.emptyResponse
-                    }
-                    return version
-                case .undocumented(statusCode: let code, _):
-                    throw SeerrAPI.APIError.undocumentedResponse(code: code)
+            case .ok(let payload):
+                guard let version = try? payload.body.json.version else {
+                    throw SeerrAPI.APIError.emptyResponse
+                }
+                return version
+            case .undocumented(statusCode: let code, _):
+                throw SeerrAPI.APIError.undocumentedResponse(code: code)
             }
-        }
-        else {
+        } else {
             throw SeerrAPI.APIError.noResponse
         }
     }
