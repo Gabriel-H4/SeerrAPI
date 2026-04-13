@@ -6,6 +6,13 @@ import PackageDescription
 let package = Package(
     name: "SeerrAPI",
     platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .visionOS(.v1)],
+    products: [
+        // Products define the executables and libraries a package produces, making them visible to other packages.
+        .library(
+            name: "SeerrAPI",
+            targets: ["SeerrAPI"]
+        ),
+    ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-openapi-generator", from: "1.11.0"),
         .package(url: "https://github.com/apple/swift-openapi-runtime", from: "1.11.0"),
