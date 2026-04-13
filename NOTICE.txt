@@ -26,6 +26,15 @@ components that this product depends on.
 
 -------------------------------------------------------------------------------
 
+This product contains the OpenAPI file and name from Seerr
+
+  * LICENSE (MIT):
+    * https://spdx.org/licenses/MIT.html
+  * HOMEPAGE:
+    * https://github.com/seerr-team/seerr
+
+---
+
 This product contains scripts and derivations from Swift OpenAPI Generator
 
   * LICENSE (Apache License 2.0):
@@ -118,8 +127,8 @@ This product contains data types from Swift Numerics
 
 This product contains a derivation of various scripts from Yams
 
-  * LICENSE (Apache License 2.0):
-    * https://www.apache.org/licenses/LICENSE-2.0
+  * LICENSE (MIT):
+    * https://spdx.org/licenses/MIT.html
   * HOMEPAGE:
     * https://github.com/jpsim/Yams
 
